@@ -1,0 +1,214 @@
+.servise {
+    padding: 0px 70px;
+}
+
+.servise header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.servise all {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.servise header h1 {
+    font-size: 60px;
+    color: var(--thirdmaincolor);
+}
+
+.servise header p {
+    font-size: 30px;
+    width: 80%;
+    color: var(--secoundmainfont);
+}
+
+.servise header button {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--thirdmaincolor);
+    color: white;
+    font-size: large;
+    white-space: nowrap;
+}
+
+.servise header button svg {
+    width: 15px;
+    height: 15px;
+    margin-left: 2px;
+
+}
+
+.servise all>div {
+    margin-top: 19px;
+    box-shadow: -17px 11px 19px 0px #00000091;
+    border-radius: 20px;
+    border: 1px solid #00000091;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+}
+.servise all > div:hover {
+    border-color: var(--thirdmaincolor);
+    box-shadow: none;
+}
+
+
+.servise all div .image {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.servise all div:nth-child(1) .image {
+    border: 5px solid var(--firstmaincolor);
+    background-image: url("../images/DSC_9896.JPG");
+}
+
+.servise all div:nth-child(2) .image {
+    border: 5px solid var(--secoundmaincolor);
+    background-image: url("../images/mahdy.JPG");
+}
+
+.servise all div:nth-child(3) .image {
+    border: 5px solid black;
+    background-image: url("../images/zyad.JPG");
+}
+
+.servise all div:nth-child(4) .image {
+    border: 5px solid var(--thirdmaincolor);
+    background-image: url("../images/foley.JPG");
+}
+
+.servise all div:nth-child(5) .image {
+    border: 5px solid var(--secoundmaincolor);
+    background-image: url("../images/youssef.JPG");
+}
+
+.servise all div:nth-child(6) .image {
+    border: 5px solid var(--firstmaincolor);
+    background-image: url("../images/hatem.JPG");
+}
+
+.servise all button {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px 10px;
+    color: var(--thirdmaincolor);
+}
+
+.servise all button svg {
+    fill: rgba(0, 0, 0, 0.5);
+
+}
+
+.servise all div p {
+
+    color: var(--secoundmainfont);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.servise all div h3 {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+@media (max-width: 700px) {
+    .servise header h1 {
+        font-size: 45px;
+    }
+
+    .servise header p {
+        font-size: 22px;
+        width: 100%;
+    }
+
+    .servise all {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 525px) {
+    .servise header h1 {
+        font-size: 35px;
+    }
+
+    .servise header p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .servise all {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .servise header button {
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .servise {
+        background-color: black;
+    }
+
+    .servise header {
+        align-items: flex-end;
+        margin-bottom: 10px;
+    }
+
+    .servise header h1 {
+        font-size: 25px;
+    }
+
+    .servise header p {
+        font-size: 12px;
+        width: 100%;
+        color: rgba(255, 255, 255, 0.505);
+    }
+
+    .servise header button {
+        padding: 5px 20px;
+    }
+
+    .servise all div {
+        border-color: rgb(255, 255, 255, 25%);
+    }
+
+    .servise all div h3 {
+        color: var(--firstmainfont);
+    }
+
+    .servise all div p {
+        color: rgba(255, 255, 255, 0.508);
+    }
+
+    .servise all div:nth-child(3) .image {
+        border-color: white;
+    }
+
+    .servise all div button {
+        border-color: rgb(255, 255, 255, 25%);
+    }
+
+    .servise all div button svg {
+        fill: var(--secoundmainfont);
+    }
+}

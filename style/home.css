@@ -1,0 +1,199 @@
+.home{
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 0 70px;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 112.44px) ;
+}
+
+.home .info h1{
+  font-size: 80px;
+  font-weight: 100;
+  align-items: center;
+
+}
+.home .info{
+  width: 40%;
+}
+.home .info > *{
+  margin-bottom: 40px ;
+}
+.home .info h1 b{
+  font-weight: 1000;
+
+}
+.home .info .search-bar{
+  background-image: url("../images/background_blur.png");
+  padding: 10px 30px;
+  gap: 10px;
+  background-size: 100%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center ;
+  background-size: cover;
+}
+.home .info .search-bar input{
+  width: 100%;
+ color: white;
+  background-color: transparent;
+  font-size: 20px;
+  border: none;
+}
+.home .info .search-bar input:focus{
+  outline: none;
+}
+.home .info .search-bar svg{
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+}
+.home .info .search-bar svg:first-child{
+  fill: var(--firstmaincolor);
+  cursor: pointer;
+}
+.home .info .search-bar svg:first-child:hover{
+  fill: var(--thirdmaincolor );
+}
+.home .info .search-bar svg:last-child{
+  fill: var(--firstmaincolor);
+  width: 50px;
+  height: 40px;
+}
+.home .info .search-bar svg:last-child:hover{
+  fill: var(--thirdmaincolor);
+}
+.home .info .people-all .people-photos{
+  padding: 60px 0px;
+  display: flex;
+  
+}
+.home .info .people-all{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+.home .info .people-all .people-photos div{
+  
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.home .info .people-all .people-photos div:first-child{
+  border: 3px solid var(--firstmaincolor);
+  background-image: url("../images/DSC_3510.JPG");
+  z-index: 4;
+}
+.home .info .people-all .people-photos div:nth-child(2){
+  border: 3px solid var(--secoundmaincolor);
+  background-image: url("../images/IMG_20220904_012822.jpg");
+  margin-left: -20px;
+  z-index: 3;
+}
+.home .info .people-all .people-photos div:nth-child(3){
+  border: 3px solid white;
+  background-image: url("../images/DSC_9896.JPG");
+  margin-left: -20px;
+  z-index: 2;
+}
+.home .info .people-all .people-photos div:nth-child(4){
+  border: 3px solid var(--thirdmaincolor);
+  background-image: url("../images/IMG_8732.jpg");
+  margin-left: -20px;
+  z-index: 1;
+}
+.home .info .people-all .people-info{
+  display: flex;
+  gap: 25px;
+
+}
+.home .info .people-all .people-info div p:first-child{
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+
+}
+.home .info .people-all .people-info div p:nth-child(2){
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.50);
+  text-align: center;
+
+}
+@media (max-width: 1300px) {
+  .home .logo {
+    width: 50%;
+  }
+
+  .home .logo img {
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .home .logo {
+    width: 40%;
+  }
+
+  .home .logo img {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .home .logo {
+    width: 30%;
+  }
+
+  .home .logo img {
+    width: 100%;
+  }
+}
+@media (max-width: 1600px) {
+  .home .info h1 {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .home .info h1 {
+    font-size: 40px;
+  }
+  .home{
+    padding: 0PX 20PX;
+  }
+}
+
+@media (max-width: 750px) {
+  .home .logo {
+    display: none;
+  }
+  .home .info {
+    width: 100%;
+  }
+  .home .info .people-all .people-photos div {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home .info h1 {
+    font-size: 40px;
+  }
+  .home .info .people-all .people-photos div {
+    width: 60px;
+    height: 60px;
+  }
+
+  .home .info .people-all .people-info div p:first-child {
+    font-size: 22px;
+  }
+  
+  .home .info .people-all .people-info div p:nth-child(2) {
+    font-size: 16px;
+  }
+}

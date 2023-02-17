@@ -1,0 +1,191 @@
+.news {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 70px;
+    gap: 50px;
+  }
+  
+  .news .info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .news .info h1 {
+    color: var(--thirdmaincolor);
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  .news .info p {
+    color: rgba(255, 255, 255, 0.504);
+    font-size: 32px;
+    width: 80%;
+  }
+  
+  .news .cards {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .news .cards > div {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    border-radius: 10px;
+    min-width: 300px;
+    cursor: pointer;
+  }
+  
+  .news .cards > div:hover {
+    border-color: var(--thirdmaincolor);
+  }
+  
+  .news .cards .pricing {
+    display: flex;
+    align-items: flex-end;
+  }
+  .news .cards .pricing span {
+    display: flex;
+  }
+  
+  .news .cards .pricing span sup {
+    margin-right: 3px;
+  }
+  
+  .news .cards .pricing sub {
+    color:  rgba(255, 255, 255, 0.5);
+  }
+  
+  .news .cards > div > p {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .news .cards div .hr {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  
+  .news .cards div .checks div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .news .cards div .checks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .news .cards div .checks div svg {
+    fill: rgba(255, 255, 255, 0.25);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .news .cards div .checks div svg:hover {
+    fill:   var(--thirdmaincolor);
+  }
+  
+  .news .cards div button {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 7px 15px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .news .cards div button:hover {
+    border-color: white;
+    background-color: white;
+    color: black;
+  }
+  
+  .news .cards > div:nth-child(2) {
+    background-image: url("../images/background_blur.png");
+    background-size: cover;
+    position: relative;
+  }
+  
+  .news .cards > div:nth-child(2)::after {
+    content: "Most popular";
+    background-color: var(--thirdmaincolor);
+    color: black;
+    padding: 5px 20px;
+    position: absolute;
+    right: 0;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  
+  .news .cards > div:nth-child(2) .checks svg {
+    fill: white;
+  }
+  
+  .news .cards > div:nth-child(2) button {
+    border-color: white;
+    background-color: white;
+    color: black;
+  }
+  
+
+  .news .dots {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .news .dots div {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.501);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .news .dots div:hover {
+    background-color: var(--thirdmaincolor);
+  }
+  
+  .news .dots div:nth-child(2) {
+    background-color: var(--thirdmaincolor);
+    box-shadow: 0 0 0 5px rgba(242, 80, 35, 0.407);
+  }
+  
+  
+  @media (max-width: 1050px) {
+    .news .cards {
+      flex-direction: column;
+    }
+  
+    .news .dots {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .news .info h1 {
+      font-size: 45px;
+    }
+    .news .info p {
+      font-size: 22px;
+      width: 100%;
+    }
+    .news .cards {
+      flex-direction: row;
+      width: 100%;
+      overflow-x: scroll;
+    }
+    
+    .news .dots {
+        display: flex ;
+      }
+
+  }
